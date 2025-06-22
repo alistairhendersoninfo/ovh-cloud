@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
 
+  <!-- Custom Styling -->
   <style>
     body {
       background: #051b45;
@@ -20,12 +21,17 @@
       background-color: #051b45;
     }
 
-    .reveal h1, .reveal h2, .reveal h3 {
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
       color: #00a2ff;
+      margin-bottom: 20px;
     }
 
     .reveal ul {
       color: #ffffff;
+      font-size: 1.2em;
+      line-height: 1.6;
     }
 
     .reveal a {
@@ -37,125 +43,109 @@
       color: #00a2ff;
     }
 
-    /* OVHcloud logo overlay */
+    .reveal section {
+      padding: 0 40px;
+    }
+
     #logo {
       position: fixed;
-      top: 15px;
-      left: 20px;
+      top: 20px;
+      left: 30px;
       z-index: 1000;
-      width: 130px;
+      height: 50px;
     }
   </style>
 </head>
 <body>
 
-<!-- OVHcloud Logo -->
-<img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/OVH_Logo.svg/320px-OVH_Logo.svg.png" alt="OVHcloud Logo">
+<!-- OVH Logo (use the SVG file you upload) -->
+<img id="logo" src="ovh-logo.svg" alt="OVHcloud Logo">
 
 <div class="reveal">
   <div class="slides">
 
     <section>
       <h1>OVHcloud</h1>
-      <h3>Scalable, Sovereign, Affordable Cloud</h3>
+      <h3>Scalable, Sovereign, Affordable Cloud Infrastructure</h3>
     </section>
 
     <section>
       <h2>About OVHcloud</h2>
       <ul>
         <li>Europe's largest cloud provider</li>
-        <li>Global infrastructure with data sovereignty</li>
-        <li>Public, Private & Hybrid Cloud</li>
+        <li>Trusted globally with 33 data centers</li>
+        <li>Focus on sovereignty, transparency, and performance</li>
       </ul>
     </section>
 
     <section>
-      <h2>Core Services</h2>
+      <h2>Core Products</h2>
       <ul>
-        <li>Public Cloud: IaaS & PaaS</li>
-        <li>Bare Metal Servers</li>
-        <li>Managed Kubernetes</li>
-        <li>Web Hosting & Databases</li>
+        <li>Public Cloud, Bare Metal Servers</li>
+        <li>Managed Kubernetes & Databases</li>
+        <li>Object Storage, Private Networks</li>
       </ul>
     </section>
 
     <section>
-      <h2>Data Sovereignty</h2>
+      <h2>Why OVHcloud?</h2>
       <ul>
-        <li>GDPR compliance</li>
-        <li>EU-based data centers</li>
         <li>No vendor lock-in</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Developer First</h2>
-      <ul>
-        <li>API-first architecture</li>
-        <li>Terraform, Ansible & CLI support</li>
-        <li>CI/CD-ready solutions</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>High Performance</h2>
-      <ul>
-        <li>AMD EPYC, Intel Xeon hardware</li>
-        <li>Up to 25 Gbps networking</li>
-        <li>Storage: NVMe, Object Storage, S3</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Green Cloud</h2>
-      <ul>
-        <li>Water-cooling data centers</li>
-        <li>Energy-efficient infrastructure</li>
-        <li>Carbon-conscious operations</li>
+        <li>Flat, transparent pricing</li>
+        <li>Full API control, DevOps friendly</li>
       </ul>
     </section>
 
     <section>
       <h2>Security & Compliance</h2>
       <ul>
-        <li>DDoS protection included</li>
-        <li>ISO/IEC 27001 & HDS certified</li>
-        <li>Private Network & VPN support</li>
+        <li>Built-in DDoS protection</li>
+        <li>ISO 27001, HDS, GDPR compliance</li>
+        <li>Zero trust and multi-factor capabilities</li>
       </ul>
     </section>
 
     <section>
-      <h2>Pricing Transparency</h2>
+      <h2>Developer Tools</h2>
       <ul>
-        <li>Pay-as-you-go</li>
-        <li>No ingress/egress lock-ins</li>
-        <li>Simple, predictable billing</li>
+        <li>Terraform, Ansible, REST APIs</li>
+        <li>OpenStack-compatible</li>
+        <li>CLI tools, full documentation</li>
       </ul>
     </section>
 
     <section>
-      <h2>Support & Community</h2>
+      <h2>Green Infrastructure</h2>
       <ul>
-        <li>24/7 Technical Support</li>
-        <li>Strong developer community</li>
-        <li>Clear documentation & tutorials</li>
+        <li>Water cooling innovation</li>
+        <li>Energy-efficient data centers</li>
+        <li>Proven sustainability model</li>
       </ul>
     </section>
 
     <section>
       <h2>Use Cases</h2>
       <ul>
-        <li>Web & App Hosting</li>
-        <li>Big Data & AI</li>
-        <li>Video streaming & SaaS</li>
-        <li>Disaster Recovery & Backup</li>
+        <li>App & Web Hosting</li>
+        <li>High-performance Computing</li>
+        <li>Media Delivery & Streaming</li>
+        <li>Backup, DR, and Edge Workloads</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pricing That Makes Sense</h2>
+      <ul>
+        <li>No ingress or egress penalties</li>
+        <li>Simple hourly/monthly billing</li>
+        <li>Predictable and flexible</li>
       </ul>
     </section>
 
     <section>
       <h2>Get Started</h2>
       <p><a href="https://www.ovhcloud.com/en-gb/" target="_blank">www.ovhcloud.com</a></p>
-      <p>Explore services, start free, or migrate today.</p>
+      <p>Build, scale, and launch with confidence.</p>
     </section>
 
   </div>
@@ -166,8 +156,8 @@
   Reveal.initialize({
     hash: true,
     slideNumber: true,
-    transition: 'slide',
-    autoSlide: 6000,         // 6 seconds
+    transition: 'fade',
+    autoSlide: 6000,
     autoSlideStoppable: true
   });
 </script>
