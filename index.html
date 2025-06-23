@@ -7,23 +7,29 @@
   <title>OVHcloud Presentation</title>
 
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
 
   <style>
     body {
+      margin: 0;
       background-color: #123F6D;
       color: white;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', 'Roboto', sans-serif;
     }
-    .reveal h1, .reveal h2, .reveal h3, .reveal p {
+    .reveal {
+      background: #123F6D;
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal li {
       color: white;
     }
     .reveal section img {
       max-height: 400px;
       margin-top: 20px;
+      border-radius: 10px;
     }
     .logo {
       max-height: 100px;
+      margin-top: 20px;
     }
     .fragment {
       opacity: 0;
@@ -32,56 +38,219 @@
     .fragment.visible {
       opacity: 1;
     }
+    a {
+      color: #3dafff;
+    }
   </style>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
+      <!-- Slide 1 -->
       <section data-transition="fade">
         <h1>OVHcloud</h1>
         <h3>Open, Flexible, Sovereign Cloud Infrastructure</h3>
         <img class="logo" src="assets/IMG_3679.png" alt="OVHcloud Logo" />
       </section>
 
-      <section data-transition="convex">
-        <h2>About OVHcloud</h2>
-        <ul>
-          <li class="fragment">Founded 1999, HQ in France</li>
-          <li class="fragment">Largest European cloud provider</li>
-        </ul>
-      </section>
+      <!-- Section 1: Intro -->
+      <section data-transition="convex"><h2>About OVHcloud</h2><ul>
+        <li class="fragment">Founded 1999, HQ in France</li>
+        <li class="fragment">Largest European cloud provider</li>
+      </ul></section>
 
-      <section data-transition="zoom">
-        <h2>What Makes OVHcloud Unique</h2>
-        <ul>
-          <li class="fragment">Water-cooling, eco-design</li>
-          <li class="fragment">GDPR-first, sovereign hosting</li>
-        </ul>
-      </section>
+      <section data-transition="zoom"><h2>What Makes OVHcloud Unique</h2><ul>
+        <li class="fragment">Water-cooling, eco-design, sustainable</li>
+        <li class="fragment">GDPR-first, sovereign hosting</li>
+      </ul></section>
 
-      <section data-transition="slide">
-        <h2>Overview of Offerings</h2>
-        <ul>
-          <li class="fragment">Compute, Storage, Networking</li>
-          <li class="fragment">Managed Services, Support</li>
-          <li class="fragment">Marketplace</li>
-        </ul>
-      </section>
+      <section data-transition="slide"><h2>Overview of Offerings</h2><ul>
+        <li class="fragment">Compute, Storage, Networking</li>
+        <li class="fragment">Managed Services, Support</li>
+        <li class="fragment">Marketplace</li>
+      </ul></section>
 
-      <section data-transition="convex">
-        <h2>Global Reach</h2>
-        <p>OVHcloud has datacenters across the globe:</p>
-        <img src="assets/world-map.png" alt="Global Regions" />
-      </section>
+      <!-- Section 2: Infrastructure -->
+      <section><h2>Public Cloud</h2><ul>
+        <li class="fragment">OpenStack-based</li>
+        <li class="fragment">Pay-as-you-go</li>
+        <li class="fragment">Fully API driven</li>
+      </ul></section>
 
-      <section data-transition="fade">
-        <h2>Q&A / Contact</h2>
-        <ul>
-          <li class="fragment">Visit: <a href="https://www.ovhcloud.com/en/">ovhcloud.com</a></li>
-          <li class="fragment">Follow us on social media</li>
-          <li class="fragment">Scan to view dashboard:</li>
-        </ul>
-        <img src="assets/ovhcloud_qr.png" alt="QR Code" />
+      <section><h2>Bare Metal Servers</h2><ul>
+        <li class="fragment">Fully customizable</li>
+        <li class="fragment">Use cases: AI, Gaming, Virtualization</li>
+      </ul></section>
+
+      <section><h2>Hosted Private Cloud</h2><ul>
+        <li class="fragment">VMWare-based</li>
+        <li class="fragment">vSAN, NSX, DRaaS</li>
+      </ul></section>
+
+      <section><h2>Web Hosting & Domains</h2><ul>
+        <li class="fragment">Shared & managed hosting</li>
+        <li class="fragment">WordPress, PrestaShop, global TLDs</li>
+      </ul></section>
+
+      <section><h2>Storage Solutions</h2><ul>
+        <li class="fragment">Object: S3-compatible (Standard/Cold)</li>
+        <li class="fragment">Block: Volume storage (Cinder API)</li>
+        <li class="fragment">File: NFS/GlusterFS</li>
+      </ul></section>
+
+      <section><h2>Networking</h2><ul>
+        <li class="fragment">vRack (private L2/L3 networking)</li>
+        <li class="fragment">Public/Private LBaaS</li>
+        <li class="fragment">Global Anti-DDoS protection</li>
+      </ul></section>
+
+      <section><h2>Security & Compliance</h2><ul>
+        <li class="fragment">ISO 27001, HDS, SOC, PCI-DSS</li>
+        <li class="fragment">SecNumCloud, EU/FR sovereign zones</li>
+      </ul></section>
+
+      <section><h2>Developer Tools</h2><ul>
+        <li class="fragment">Terraform provider</li>
+        <li class="fragment">OVHcloud CLI, API Explorer</li>
+      </ul></section>
+
+      <!-- Section 3: Global -->
+      <section data-transition="convex"><h2>Global Reach</h2><ul>
+        <li class="fragment">World map with DC locations</li>
+        <li class="fragment">Regions: EU, NA, Asia</li>
+      </ul><img src="assets/world-map.png" alt="Global Map"/></section>
+
+      <section><h2>Regional Focus</h2><ul>
+        <li class="fragment">Europe: Sustainability, compliance</li>
+        <li class="fragment">US: Performance + control</li>
+        <li class="fragment">Asia: Emerging growth</li>
+      </ul></section>
+
+      <section><h2>Latency & Backbone</h2><ul>
+        <li class="fragment">OVHcloud global fiber</li>
+        <li class="fragment">100+ POPs</li>
+        <li class="fragment">Private interconnects</li>
+      </ul></section>
+
+      <section><h2>Region-Aware Services</h2><ul>
+        <li class="fragment">S3 regional buckets</li>
+        <li class="fragment">Region-specific APIs</li>
+        <li class="fragment">Local snapshots/backups</li>
+      </ul></section>
+
+      <!-- Section 4: Use Cases -->
+      <section><h2>SaaS & App Hosting</h2><ul>
+        <li class="fragment">Kubernetes + CI/CD</li>
+        <li class="fragment">Stateless microservices</li>
+        <li class="fragment">Edge-ready</li>
+      </ul></section>
+
+      <section><h2>AI/ML & GPU Workloads</h2><ul>
+        <li class="fragment">NVIDIA A100/A40 servers</li>
+        <li class="fragment">Elastic GPU pools</li>
+        <li class="fragment">AI Training & inference</li>
+      </ul></section>
+
+      <section><h2>High-Performance Databases</h2><ul>
+        <li class="fragment">Managed MySQL/PostgreSQL</li>
+        <li class="fragment">Redis, Cassandra</li>
+        <li class="fragment">Cold tier backup integration</li>
+      </ul></section>
+
+      <section><h2>Backup & DR</h2><ul>
+        <li class="fragment">Veeam support</li>
+        <li class="fragment">Region-aware replication</li>
+        <li class="fragment">Bare metal to object archive</li>
+      </ul></section>
+
+      <section><h2>Digital Sovereignty</h2><ul>
+        <li class="fragment">Public sector compliance</li>
+        <li class="fragment">SecNumCloud offering</li>
+        <li class="fragment">French legal framework</li>
+      </ul></section>
+
+      <!-- Section 5: Support -->
+      <section><h2>Support Tiers</h2><ul>
+        <li class="fragment">Basic, Premium, Enterprise</li>
+        <li class="fragment">SLA commitments</li>
+        <li class="fragment">24/7 NOC worldwide</li>
+      </ul></section>
+
+      <section><h2>Partner Program</h2><ul>
+        <li class="fragment">Technology & channel partners</li>
+        <li class="fragment">OVHcloud Connect ecosystem</li>
+      </ul></section>
+
+      <section><h2>OVHcloud Marketplace</h2><ul>
+        <li class="fragment">CMS, Monitoring, Analytics tools</li>
+        <li class="fragment">Auto-deployment scripts</li>
+        <li class="fragment">One-click apps</li>
+      </ul></section>
+
+      <section><h2>Documentation & Community</h2><ul>
+        <li class="fragment">OVHcloud Docs portal</li>
+        <li class="fragment">GitHub repos</li>
+        <li class="fragment">Forums and community Slack</li>
+      </ul></section>
+
+      <!-- Section 6: Pricing -->
+      <section><h2>Transparent Pricing</h2><ul>
+        <li class="fragment">No data egress fees</li>
+        <li class="fragment">Flat hourly/daily pricing</li>
+      </ul></section>
+
+      <section><h2>Reserved vs On-Demand</h2><ul>
+        <li class="fragment">Long-term discounts</li>
+        <li class="fragment">Spot pricing for burst loads</li>
+      </ul></section>
+
+      <section><h2>Cost Calculator</h2><ul>
+        <li class="fragment">TCO tool for all services</li>
+        <li class="fragment">Budget forecast</li>
+      </ul></section>
+
+      <section><h2>Billing Dashboard</h2><ul>
+        <li class="fragment">Detailed resource tracking</li>
+        <li class="fragment">API-enabled usage metrics</li>
+      </ul></section>
+
+      <!-- Section 7: Case Studies -->
+      <section><h2>Startup: SaaS Platform</h2><ul>
+        <li class="fragment">Multi-region Kubernetes</li>
+        <li class="fragment">>40% savings vs hyperscaler</li>
+      </ul></section>
+
+      <section><h2>Research: University HPC</h2><ul>
+        <li class="fragment">Bare metal with GPU workloads</li>
+        <li class="fragment">Long-term storage with S3 Cold</li>
+      </ul></section>
+
+      <section><h2>Government: e-Gov Cloud</h2><ul>
+        <li class="fragment">SecNumCloud compliant</li>
+        <li class="fragment">Digital ID + authentication infra</li>
+      </ul></section>
+
+      <!-- Section 8: Summary -->
+      <section><h2>Why OVHcloud?</h2><ul>
+        <li class="fragment">Open, Sovereign, Transparent</li>
+        <li class="fragment">Developer-first platform</li>
+      </ul></section>
+
+      <section><h2>Get Started Today</h2><ul>
+        <li class="fragment">Signup portal</li>
+        <li class="fragment">Contact sales</li>
+        <li class="fragment">Book solution architect</li>
+      </ul></section>
+
+      <section><h2>Q&A / Contact</h2><ul>
+        <li class="fragment">OVHcloud.com</li>
+        <li class="fragment">Socials</li>
+        <li class="fragment">QR code to dashboard or demo</li>
+      </ul><img src="assets/ovhcloud_qr.png" alt="QR Code" /></section>
+
+      <!-- Slide 36 -->
+      <section><h2>Architecture Diagram</h2>
+        <img src="assets/architecture-diagram.png" alt="Architecture Diagram" />
       </section>
 
     </div>
@@ -92,6 +261,9 @@
     Reveal.initialize({
       hash: true,
       slideNumber: true,
+      autoSlide: 15000,
+      autoSlideStoppable: false,
+      loop: false,
       transition: 'convex',
       plugins: []
     });
