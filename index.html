@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OVHcloud Presentation</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/solarized.css" id="theme">
+
+  <style>
+    body {
+      background-color: #123F6D;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal p {
+      color: white;
+    }
+    .reveal section img {
+      max-height: 400px;
+      margin-top: 20px;
+    }
+    .logo {
+      max-height: 100px;
+    }
+    .fragment {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .fragment.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-transition="fade">
+        <h1>OVHcloud</h1>
+        <h3>Open, Flexible, Sovereign Cloud Infrastructure</h3>
+        <img class="logo" src="assets/IMG_3679.png" alt="OVHcloud Logo" />
+      </section>
+
+      <section data-transition="convex">
+        <h2>About OVHcloud</h2>
+        <ul>
+          <li class="fragment">Founded 1999, HQ in France</li>
+          <li class="fragment">Largest European cloud provider</li>
+        </ul>
+      </section>
+
+      <section data-transition="zoom">
+        <h2>What Makes OVHcloud Unique</h2>
+        <ul>
+          <li class="fragment">Water-cooling, eco-design</li>
+          <li class="fragment">GDPR-first, sovereign hosting</li>
+        </ul>
+      </section>
+
+      <section data-transition="slide">
+        <h2>Overview of Offerings</h2>
+        <ul>
+          <li class="fragment">Compute, Storage, Networking</li>
+          <li class="fragment">Managed Services, Support</li>
+          <li class="fragment">Marketplace</li>
+        </ul>
+      </section>
+
+      <section data-transition="convex">
+        <h2>Global Reach</h2>
+        <p>OVHcloud has datacenters across the globe:</p>
+        <img src="assets/world-map.png" alt="Global Regions" />
+      </section>
+
+      <section data-transition="fade">
+        <h2>Q&A / Contact</h2>
+        <ul>
+          <li class="fragment">Visit: <a href="https://www.ovhcloud.com/en/">ovhcloud.com</a></li>
+          <li class="fragment">Follow us on social media</li>
+          <li class="fragment">Scan to view dashboard:</li>
+        </ul>
+        <img src="assets/ovhcloud_qr.png" alt="QR Code" />
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: 'convex',
+      plugins: []
+    });
+
+    Reveal.on('fragmentshown', event => {
+      event.fragment.classList.add('visible');
+    });
+    Reveal.on('fragmenthidden', event => {
+      event.fragment.classList.remove('visible');
+    });
+  </script>
+</body>
+</html>
