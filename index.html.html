@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OVHcloud Slide Deck with Diagram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js Core -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+
+  <!-- Custom Styling -->
+  <style>
+    body {
+      background: #051b45;
+      color: #f0f0f0;
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    }
+    .reveal {
+      background-color: #051b45;
+    }
+    .reveal h1, .reveal h2, .reveal h3 {
+      color: #00a2ff;
+    }
+    .reveal ul, .reveal p {
+      color: #ffffff;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .reveal a {
+      color: #00a2ff;
+      text-decoration: underline;
+    }
+    .reveal .slide-number {
+      color: #00a2ff;
+    }
+    section {
+      padding: 0 40px;
+    }
+    #logo {
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      z-index: 1000;
+      height: 50px;
+    }
+    .mermaid {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+</head>
+<body>
+
+<!-- OVH Logo -->
+<img id="logo" src="IMG_3679.png" alt="OVHcloud Logo">
+
+<div class="reveal">
+  <div class="slides">
+
+    <section data-transition="zoom">
+      <h1>OVHcloud</h1>
+      <h3 class="fragment fade-in">Your Scalable, Sovereign Cloud Partner</h3>
+    </section>
+
+    <section data-transition="slide">
+      <h2>Architecture Diagram</h2>
+      <div class="mermaid">
+        graph TD;
+          A[User] --> B[HAProxy Load Balancer]
+          B --> C1[Nextcloud App Node 1]
+          B --> C2[Nextcloud App Node 2]
+          C1 --> D[MariaDB Cluster]
+          C2 --> D
+          C1 --> E[S3-Compatible Storage]
+          C2 --> E
+          E --> F[Long-term Backup / Glacier]
+      </div>
+      <p class="fragment fade-in">OVHcloud-hosted Nextcloud cluster example</p>
+    </section>
+
+    <section data-transition="convex">
+      <h2>Start Now</h2>
+      <p class="fragment fade-in">Deploy in minutes via <a href="https://www.ovhcloud.com/en-gb/" target="_blank">ovhcloud.com</a></p>
+      <p class="fragment fade-in">Scalable, secure, and affordable</p>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: true,
+    autoSlide: 6000,
+    autoSlideStoppable: true,
+    transition: 'slide',
+    plugins: []
+  });
+</script>
+
+</body>
+</html>
